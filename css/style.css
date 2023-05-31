@@ -43,7 +43,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 2rem 9%;
+    padding: 1.5% 1.5% 1.5%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -84,7 +84,7 @@ section {
 }
 
 .home-img img {
-    width:35vw;
+    width: 35vw;
 }
 
 .home-content h3 {
