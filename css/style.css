@@ -504,6 +504,7 @@ footer {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+        overflow-x: hidden;
     }
 
     .contact form .input-box input {
@@ -511,10 +512,13 @@ footer {
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 375px) {
+     html {
+        overflow-x: hidden;
+    }
+    
     .home-img img {
         width: 60vw;
-        overflow-x: hidden;
     }
 
     .about-img img {
