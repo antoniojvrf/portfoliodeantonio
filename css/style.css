@@ -514,6 +514,7 @@ footer {
 @media (max-width: 365px) {
     .home-img img {
         width: 90vw;
+        overflow-x: hidden;
     }
 
     .about-img img {
