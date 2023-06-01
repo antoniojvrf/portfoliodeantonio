@@ -513,12 +513,12 @@ footer {
 
 @media (max-width: 365px) {
     .home-img img {
-        width: 90vw;
+        width: 60vw;
         overflow-x: hidden;
     }
 
     .about-img img {
-        width: 90vw;
+        width: 60vw;
     }
 
     .footer {
