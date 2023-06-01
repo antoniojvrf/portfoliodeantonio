@@ -22,6 +22,8 @@
 
 /*Cores utilizáveis da paleta: #1f242d, #946961, #401008, #3d454d.*/
 
+/* SEÇÃO PRINCIPAL / MAIN SECTION  */
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -37,6 +39,8 @@ section {
     min-height: 100vh;
     padding: 10rem 9%;
 }
+
+/* HEADER */
 
 .header {
     position: fixed;
@@ -80,6 +84,8 @@ section {
     display: none;
 }
 
+/* SEÇÃO DE PÁGINA INICIAL / HOME PAGE SECTION */
+
 .home {
     display: flex;
     justify-content: center;
@@ -88,6 +94,8 @@ section {
 
 .home-img img {
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+    
 }
 
 .home-content h3 {
@@ -111,6 +119,7 @@ span {
 .home-content p {
     font-size: 1.6rem;
     font-weight: 300;
+    margin-right: 10rem;
 }
 
 .social-media a {
@@ -134,6 +143,8 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* DESIGN DE BOTÃO / BUTTON DESIGN */
+
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -149,6 +160,8 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+
+/* SEÇÃO "SOBRE" / "ABOUT" SECTION */
 
 .about {
     display: flex;
@@ -181,6 +194,8 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+/* SEÇÃO "SERVIÇOS"/ "SERVICES" SECTION */
 
 .services {
     margin-bottom: 5rem;
@@ -225,7 +240,7 @@ span {
 }
 
 
-/* SEÇÃO "MEUS PROJETOS" */
+/* SEÇÃO "MEUS PROJETOS" / "PORTFOLIO" SECTION */
 
 .portfolio {
     background: var(--second-bg-color);
@@ -240,9 +255,7 @@ span {
     align-items: center;
     gap: 2.5rem;
 }
-
-    /* LEMBRETE: Ao adicionar mais projetos, lembrar sempre de alterar o grid acima. */
-
+         /* LEMBRETE: Ao adicionar mais projetos, sempre alterar o grid acima. */
 
 .portfolio-container .portfolio-box {
     position: relative;
@@ -306,7 +319,7 @@ span {
     color: var(--second-bg-color);
 }
 
-/* SEÇÃO CONTATO */
+/* SEÇÃO "CONTATO" / "CONTACT" SECTION */
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -349,6 +362,8 @@ span {
     cursor: pointer;
 }
 
+/* RODAPÉ / FOOTER */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -381,7 +396,7 @@ footer {
     color: var(--second-bg-color);
 }
 
-/* BREAKPOINTS */
+/* QUEBRAS DE ELEMENTOS PARA DIFERENTES RESOLUÇÕES / BREAKING POINTS FOR MULTIPLE RESOLUTIONS /  */
 
 @media (max-width: 1200px) {
     html {
@@ -432,9 +447,10 @@ footer {
         display: none;
     }
 
-.navbar.active {
+    .navbar.active {
     display: block;
-}
+    }
+
     .navbar a {
         display: block;
         font-size: 2rem;
@@ -459,18 +475,6 @@ footer {
         animation: floatImage 4s ease-in-out infinite;
     }
 
-    @keyframes floatImage {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-2.4rem);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-
     .about {
         flex-direction: column-reverse;
     }
@@ -490,8 +494,7 @@ footer {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* LEMBRETE: Ao adicionar mais projetos, lembrar sempre de alterar o grid acima. */
+        /* LEMBRETE: Ao adicionar mais projetos, sempre alterar o grid acima. */
 
 }
 
@@ -512,17 +515,14 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-     html {
-        overflow-x: hidden;
-    }
-    
+@media (max-width: 365px) {
+
     .home-img img {
-        width: 60vw;
+        width: 90vw;
     }
 
     .about-img img {
-        width: 60vw;
+        width: 90vw;
     }
 
     .footer {
@@ -532,5 +532,19 @@ footer {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+/* OUTROS / MISCELLANEOUS */
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
