@@ -1,5 +1,7 @@
 # PORTFÓLIO PESSOAL
 
+[![NPM](https://img/shields/io/npm/1/react)]
+
 ## Sobre o projeto
 
 O presente portfólio é uma aplicação front-end responsiva e adaptável, que tem como finalidade por em prática conhecimentos de HTML, CSS e Javascript. Ao mesmo tempo, ele busca apresentar seu autor ao mundo.
